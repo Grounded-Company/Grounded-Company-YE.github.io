@@ -38,8 +38,8 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl font-bold leading-tight mb-6"
             >
-              Plant Your Thoughts,{" "}
-              <span className="text-primary">Grow Your Journey</span>
+              Stay Grounded,{" "}
+              <span className="text-primary">Grow with Purpose</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function Home() {
             >
               <Link href="/products">
                 <Button size="lg" className="bg-primary text-primary-foreground">
-                  Explore Our Journals
+                  Explore Our Journal
                 </Button>
               </Link>
             </motion.div>
@@ -69,7 +69,7 @@ export default function Home() {
       <section className="py-20">
         <div className="container px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why Choose Growth Journal?</h2>
+            <h2 className="text-3xl font-bold mb-4">Why Choose Grounded?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               More than just a journal, it's a journey of personal growth that creates real environmental impact.
             </p>

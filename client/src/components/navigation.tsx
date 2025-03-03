@@ -10,7 +10,7 @@ export default function Navigation() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center gap-2 mr-8">
           <Sprout className="h-6 w-6 text-primary" />
-          <span className="font-semibold">The Growth Journal</span>
+          <span className="font-semibold">Grounded</span>
         </Link>
 
         <div className="flex gap-6">
@@ -18,7 +18,7 @@ export default function Navigation() {
             { href: "/", label: "Home" },
             { href: "/about", label: "About" },
             { href: "/team", label: "Our Team" },
-            { href: "/products", label: "The Growth Journal" },
+            { href: "/products", label: "Growth Journal" },
           ].map(({ href, label }) => (
             <Link
               key={href}

@@ -27,7 +27,7 @@ export class MemStorage implements IStorage {
     // Add the Growth Journal product
     this.createProduct({
       name: "The Growth Journal",
-      description: "Our signature plantable journal that blooms into wildflowers. Each page is crafted from premium recycled paper embedded with carefully selected wildflower seeds. As you fill its pages with your thoughts and reflections, you're not just documenting your personal growth – you're creating future gardens.",
+      description: "Grounded's signature plantable journal that blooms into wildflowers. Each page is crafted from premium recycled paper embedded with carefully selected wildflower seeds. As you fill its pages with your thoughts and reflections, you're not just documenting your personal growth – you're creating future gardens.",
       price: 2999,
       features: [
         "100% recycled, seed-embedded paper",
@@ -44,7 +44,7 @@ export class MemStorage implements IStorage {
     this.createTeamMember({
       name: "Sarah Green",
       role: "Founder & CEO",
-      bio: "Passionate about combining personal development with environmental sustainability. Sarah founded The Growth Journal to help people nurture both their inner growth and the world around them.",
+      bio: "Passionate about combining personal development with environmental sustainability. Sarah founded Grounded to help people nurture both their inner growth and the world around them.",
       imageUrl: null
     });
   }

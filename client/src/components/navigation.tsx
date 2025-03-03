@@ -18,7 +18,7 @@ export default function Navigation() {
             { href: "/", label: "Home" },
             { href: "/about", label: "About" },
             { href: "/team", label: "Our Team" },
-            { href: "/products", label: "The Journal" },
+            { href: "/products", label: "The Growth Journal" },
           ].map(({ href, label }) => (
             <Link
               key={href}

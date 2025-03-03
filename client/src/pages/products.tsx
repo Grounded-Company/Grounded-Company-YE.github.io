@@ -3,6 +3,8 @@ import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Leaf, Book, Sprout, Heart } from "lucide-react";
+import { useCart } from "@/lib/cart-context";
+import { useToast } from "@/hooks/use-toast";
 import type { Product } from "@shared/schema";
 
 const features = [
@@ -32,8 +34,25 @@ export default function Products() {
   const { data: products, isLoading } = useQuery<Product[]>({
     queryKey: ["/api/products"],
   });
+  const { addItem } = useCart();
+  const { toast } = useToast();
 
   const journal = products?.[0];
+
+  const handleAddToCart = () => {
+    if (journal) {
+      addItem({
+        id: journal.id,
+        name: journal.name,
+        price: journal.price,
+        quantity: 1
+      });
+      toast({
+        title: "Added to cart",
+        description: "The Growth Journal has been added to your cart."
+      });
+    }
+  };
 
   return (
     <main className="py-20">
@@ -92,9 +111,11 @@ export default function Products() {
               </p>
               <div className="flex items-center gap-4 mb-8">
                 <span className="text-3xl font-bold">
-                  ${journal ? (journal.price / 100).toFixed(2) : "29.99"}
+                  £{journal ? (journal.price / 100).toFixed(2) : "29.99"}
                 </span>
-                <Button size="lg">Add to Cart</Button>
+                <Button size="lg" onClick={handleAddToCart}>
+                  Add to Cart
+                </Button>
               </div>
             </motion.div>
           </div>

@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Sprout } from "lucide-react";
+import CartIcon from "./cart-icon";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -33,6 +34,9 @@ export default function Navigation() {
               {label}
             </Link>
           ))}
+        </div>
+        <div className="ml-auto">
+          <CartIcon />
         </div>
       </div>
     </nav>

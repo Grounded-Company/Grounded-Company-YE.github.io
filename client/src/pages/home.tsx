@@ -30,13 +30,17 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden bg-gradient-to-b from-primary/10 to-background">
-        <div className="container px-4">
-          <div className="max-w-3xl">
+      <section className="relative min-h-[90vh] flex items-center">
+        <div className="container mx-auto px-4 text-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-3xl mx-auto"
+          >
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-5xl font-bold leading-tight mb-6"
+              className="text-4xl md:text-6xl font-bold mb-6"
             >
               Stay Grounded,{" "}
               <span className="eco-gradient">Grow with Purpose</span>
@@ -54,14 +58,15 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
+              className="mb-16"
             >
               <Link href="/products">
-                <Button size="lg" className="bg-primary text-primary-foreground">
+                <Button size="lg" className="button-primary text-primary-foreground">
                   Explore Our Journal
                 </Button>
               </Link>
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </section>
 

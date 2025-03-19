@@ -34,3 +34,19 @@
 .text-outline {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
+
+section.hero-section {
+  @apply bg-gradient-to-b from-[#BEE3BA]/30 to-background;
+}
+
+.nav-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button-primary {
+  @apply bg-gradient-to-r from-[#BEE3BA] to-[#AEDCAE] hover:shadow-md transition-all duration-300;
+}
+
+.accent-card {
+  @apply border-2 border-[#E4A0B7]/20 hover:border-[#E4A0B7]/40 transition-all duration-300;
+}

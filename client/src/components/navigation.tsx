@@ -6,11 +6,11 @@ export default function Navigation() {
   const [location] = useLocation();
 
   return (
-    <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="nav-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center gap-2 mr-8">
           <img 
-            src="/attached_assets/image-removebg-preview (11).png" 
+            src="./attached_assets/image-removebg-preview (11).png" 
             alt="Grounded Logo"
             className="h-10 w-auto object-contain"
           />

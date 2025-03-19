@@ -12,7 +12,7 @@ export default function Navigation() {
           <img 
             src="/attached_assets/image-removebg-preview (11).png" 
             alt="Grounded Logo"
-            className="h-10 w-auto"
+            className="h-10 w-auto object-contain"
           />
         </Link>
 
@@ -29,7 +29,7 @@ export default function Navigation() {
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
                 location === href
-                  ? "text-foreground"
+                  ? "text-foreground text-outline"
                   : "text-foreground/60"
               )}
             >
@@ -37,7 +37,7 @@ export default function Navigation() {
             </Link>
           ))}
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center mr-4">
           <CartIcon />
         </div>
       </div>

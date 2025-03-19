@@ -8,17 +8,17 @@ const features = [
   {
     icon: Leaf,
     title: "Eco-Friendly",
-    description: "Made with 100% recycled paper and embedded with real flower seeds"
+    description: "Made with 100% recycled paper and embedded with emotion-specific flower seeds"
   },
   {
     icon: Heart,
-    title: "Self-Care",
-    description: "Daily prompts and exercises to nurture your personal growth"
+    title: "Emotional Growth",
+    description: "Transform your feelings into living, growing symbols of personal development"
   },
   {
     icon: Brain,
-    title: "Mindfulness",
-    description: "Structured reflection spaces to cultivate awareness and presence"
+    title: "Mindful Practice",
+    description: "Process emotions through the therapeutic combination of journaling and gardening"
   }
 ];
 
@@ -39,7 +39,7 @@ export default function Home() {
               className="text-5xl font-bold leading-tight mb-6"
             >
               Stay Grounded,{" "}
-              <span className="text-primary">Grow with Purpose</span>
+              <span className="eco-gradient">Grow with Purpose</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -47,8 +47,8 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="text-xl text-muted-foreground mb-8"
             >
-              A revolutionary journal that transforms your reflections into real flowers. 
-              Write your story, plant your pages, and watch your growth bloom.
+              Transform your emotions into living memories with our revolutionary plantable journal. 
+              Write, reflect, and watch your feelings bloom into beautiful flowers.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,8 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Choose Grounded?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              More than just a journal, it's a journey of personal growth that creates real environmental impact.
+              Our mission is to provide a mindful and sustainable way to process emotions 
+              by transforming journaling into a living, growing experience.
             </p>
           </div>
 

@@ -1,6 +1,5 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Sprout } from "lucide-react";
 import CartIcon from "./cart-icon";
 
 export default function Navigation() {
@@ -10,11 +9,14 @@ export default function Navigation() {
     <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center gap-2 mr-8">
-          <Sprout className="h-6 w-6 text-primary" />
-          <span className="font-semibold">Grounded</span>
+          <img 
+            src="/attached_assets/image-removebg-preview (11).png" 
+            alt="Grounded Logo"
+            className="h-10 w-auto"
+          />
         </Link>
 
-        <div className="flex gap-6">
+        <div className="flex gap-6 flex-1 justify-center">
           {[
             { href: "/", label: "Home" },
             { href: "/about", label: "About" },
@@ -35,7 +37,7 @@ export default function Navigation() {
             </Link>
           ))}
         </div>
-        <div className="ml-auto">
+        <div className="flex items-center">
           <CartIcon />
         </div>
       </div>
